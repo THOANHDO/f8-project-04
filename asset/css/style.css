@@ -245,6 +245,11 @@ a {
   border-radius: 10px;
 }
 
+.hero-list__img--tow {
+  background: #c6e2fa;
+  border-radius: 10px;
+}
+
 .hero-list-content {
   margin-left: 10px;
 }
@@ -304,12 +309,17 @@ a {
 
 /* about  */
 .about {
-  margin-top: 207px;
+  margin-top: 138px;
 }
 
 .about__inner {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 1fr;
+}
+
+.about-media {
+  position: relative;
 }
 
 .about__span {
@@ -364,4 +374,67 @@ a {
   position: absolute;
   content: url(../icon/check-box.svg);
   padding-left: 4px;
+}
+
+.about-card {
+  position: relative;
+  text-align: center;
+  width: 136px;
+  left: 0;
+  top: 157px;
+  padding: 31px 26px 29px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+  border-radius: 10px;
+}
+
+.about-card__year {
+  font-family: sora, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.about-card__desc {
+  margin-top: 14px;
+  font-size: 1.4rem;
+  line-height: 1.42;
+  color: #c6f4f9;
+}
+
+.about-card__img {
+  position: absolute;
+  top: -40px;
+  right: -32px;
+}
+
+.about--warps {
+  position: relative;
+  width: 494px;
+  margin-left: auto;
+}
+
+.about--warps__img {
+  display: block;
+  width: 450px;
+  margin: 0 auto;
+}
+
+.about--warps__img::after {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: -1;
+  content: "";
+  height: 336px;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+}
+
+.about--warps__decor {
+  position: absolute;
+  top: 150px;
+  right: -70px;
+  z-index: -1;
 }
