@@ -105,7 +105,7 @@ a {
 .header {
   padding: 26px 0 8px 0;
   background: #fffaf5;
-  z-index: 1;
+  z-index: 2;
 }
 
 .fexid {
@@ -570,4 +570,125 @@ a {
 
 .tap-content__action {
   display: block;
+}
+
+/* service  */
+.service {
+  margin-top: 130px;
+  padding: 68px 0 100px;
+}
+
+.service-top {
+  text-align: center;
+}
+
+.service__desc {
+  font-family: sora, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #5e6085;
+  margin-bottom: 15px;
+}
+
+.service__body {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 65px;
+}
+
+.service-items {
+  width: 294px;
+  padding: 30px;
+  background: #fff;
+  border: 2px solid rgba(255, 188, 122, 0.26);
+  border-radius: 10px;
+}
+
+.service-items + .service-items {
+  margin-top: 24px;
+}
+
+.service-items__heading {
+  padding-left: 12px;
+  position: relative;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #000958;
+}
+
+.service-items__heading::before {
+  position: absolute;
+  content: "";
+  inset: 0 auto 0 0;
+  display: inline-block;
+  width: 2px;
+  border-radius: 1px;
+  background: linear-gradient(#ff5b2e, #ffa187);
+}
+
+.service-items__desc {
+  margin: 18px 0 24px;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #656689;
+}
+
+.service-items__more {
+  font-family: sora, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #34396a;
+}
+
+.service-items__more::after {
+  content: url(/asset/icon/arrow-up-right.svg);
+  margin: 1px 0 0 5px;
+}
+
+.service-media {
+  position: relative;
+  margin-top: 18px;
+}
+
+.service-media::after {
+  content: "";
+  position: absolute;
+  height: 350px;
+  left: 16px;
+  right: 16px;
+  bottom: 0;
+  background: linear-gradient(180deg, #9df1fb 0%, #73d0db 108.14%);
+  border-radius: 10px;
+}
+
+.service-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
+.service-cta__wrap {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-cta {
+  min-width: 214px;
+  color: #ff5b2e;
+  border-color: currentColor;
+}
+
+.btn-cta:hover {
+  background: var(--primany-color);
+  color: #fff;
 }
