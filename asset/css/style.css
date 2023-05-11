@@ -649,7 +649,7 @@ a {
 }
 
 .service-items__more::after {
-  content: url(/asset/icon/arrow-up-right.svg);
+  content: url(../icon/arrow-up-right.svg);
   margin: 1px 0 0 5px;
 }
 
