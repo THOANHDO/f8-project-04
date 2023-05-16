@@ -583,6 +583,7 @@ a {
   padding: 68px 0 100px;
 }
 
+.pricing-content,
 .staff-top,
 .service-top {
   text-align: center;
@@ -693,10 +694,11 @@ a {
 .staff-btn,
 .btn-cta {
   min-width: 214px;
-  color: #ff5b2e;
+  color: var(--primany-color);
   border-color: currentColor;
 }
 
+.pricing-card__btn:hover,
 .staff-btn:hover,
 .btn-cta:hover {
   background: var(--primany-color);
@@ -807,4 +809,146 @@ a {
 
 .staff-btn {
   min-width: 193px;
+}
+
+/* pricing */
+.pricing {
+  padding: 86px 0;
+  background: #fff6ed;
+}
+
+.pricing-container {
+  max-width: 994px;
+}
+
+.pricing-desc {
+  margin: 24px auto 38px auto;
+  width: 709px;
+}
+
+.pricing-switch__wraps {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing__input:checked + .pricing__label::before {
+  width: 131px;
+  left: auto;
+  right: 0;
+}
+
+.pricing__input:not(:checked)
+  + .pricing__label
+  .pricing__switch-value:nth-child(2),
+.pricing__input:checked + .pricing__label .pricing__switch-value:nth-child(1) {
+  color: var(--primany-color);
+}
+
+.pricing__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  width: 276px;
+  height: 56px;
+  border-radius: 99px;
+  border: 1px solid #ff5b2e99;
+  user-select: none;
+}
+
+.pricing__label::before {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 100%;
+  background: var(--primany-color);
+  border-radius: inherit;
+}
+
+.pricing__switch-value {
+  z-index: 1;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #fff;
+}
+
+.pricing__switch-inner {
+  position: relative;
+}
+
+.pricing__sale {
+  position: absolute;
+  top: -10px;
+  right: -112px;
+}
+
+.pricing-list {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 44px;
+}
+
+.pricing-card {
+  padding: 30px 28px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.pricing-card:hover {
+  box-shadow: 0px 20px 44px rgba(195, 108, 22, 0.06);
+}
+
+.pricing-card__desc {
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #ff5b2e;
+}
+
+.pricing-card__heading {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #3f4065;
+}
+
+.pricing-card__price {
+  display: block;
+  margin-top: 24px;
+  font-family: sora, sans-serif;
+  font-weight: 700;
+  font-size: 3.3rem;
+  line-height: 1.03;
+  color: #000958;
+}
+
+.pricing-card__btn {
+  --height: 44px;
+  margin-top: 22px;
+  width: 100%;
+  border: 1px solid rgba(255, 91, 46, 0.6);
+  color: var(--primany-color);
+  background: transparent;
+}
+
+.pricing-card__list {
+  margin-top: 24px;
+}
+
+.pricing-card__list--items {
+  display: flex;
+  margin-top: 18px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #656689;
+}
+
+.pricing-card__list--items::before {
+  content: url(../icon/pricing-vector.svg);
+  margin-right: 14px;
 }
